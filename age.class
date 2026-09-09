@@ -1,0 +1,26 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+final class age {
+   age() {
+   }
+
+   void main() {
+      IO.print("Enter Your Age: ");
+      int var1 = Integer.parseInt(IO.readln());
+      String var2;
+      if (var1 >= 0 && var1 <= 120) {
+         if (var1 < 10) {
+            var2 = "Child";
+         } else if (var1 < 20) {
+            var2 = "Teenager";
+         } else if (var1 < 60) {
+            var2 = "Adult";
+         } else {
+            var2 = "Senior";
+         }
+      } else {
+         var2 = "Error input";
+      }
+
+      IO.println("Your age is: " + var2);
+   }
+}
